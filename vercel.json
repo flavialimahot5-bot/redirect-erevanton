@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://everatron.vercel.app/",
+      "permanent": false
+    }
+  ]
+}
