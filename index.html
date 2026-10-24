@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="0; url=https://everatron-usa.vercel.app/">
     <title>Redirecionando...</title>
-    <script>window.location.replace('https://everatron-usa.vercel.app/');</script>
+    <script>
+      const destination = 'https://everatron-usa.vercel.app/' + window.location.search + window.location.hash;
+      window.location.replace(destination);
+    </script>
   </head>
   <body>
-    <p><a href="https://everatron-usa.vercel.app/">Clique aqui para continuar</a></p>
+    <p><a id="continue-link" href="https://everatron-usa.vercel.app/">Clique aqui para continuar</a></p>
+    <script>document.getElementById('continue-link').href = destination;</script>
   </body>
 </html>
