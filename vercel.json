@@ -6,7 +6,7 @@
   "redirects": [
     {
       "source": "/:path*",
-      "destination": "https://everatron.vercel.app/",
+      "destination": "https://everatron-usa.vercel.app/",
       "permanent": false
     }
   ]
